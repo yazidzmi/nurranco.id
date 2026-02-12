@@ -72,18 +72,18 @@
   <style>@view-transition { navigation: auto; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
   <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <style>@view-transition { navigation: auto; }</style>
  </head>
  <body class="h-full font-body">
-  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color: #FDF8F3;">
-   <!-- Header -->
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color: #FDF8F3;"><!-- Header -->
    <header class="w-full py-3 md:py-4 px-4 md:px-6" style="background-color: #FFFBF7;">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
      <div class="flex items-center gap-2 md:gap-3">
-      <div class="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center flex-shrink-0"><img src="image/logo-nurra.png" alt="Logo Kurma Susu" style="width: 100%; height: 100%; object-fit: contain;">
+      <div class="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center flex-shrink-0">
+       <img src="image/logo-nurra.png" alt="Logo Kurma Susu" style="width: 100%; height: 100%; object-fit: contain;">
       </div><span id="brand-name" class="font-display text-lg md:text-2xl font-bold" style="color: #8B5A2B;">Nurra &amp; Co.</span>
      </div>
-     <nav class="hidden md:flex items-center gap-8">
-      <a href="#produk" class="font-medium transition-colors hover:opacity-70 text-sm" style="color: #5D4037;">Produk</a> <a href="#manfaat" class="font-medium transition-colors hover:opacity-70 text-sm" style="color: #5D4037;">Manfaat</a> <a href="#testimoni" class="font-medium transition-colors hover:opacity-70 text-sm" style="color: #5D4037;">Testimoni</a>
+     <nav class="hidden md:flex items-center gap-8"><a href="#produk" class="font-medium transition-colors hover:opacity-70 text-sm" style="color: #5D4037;">Produk</a> <a href="#manfaat" class="font-medium transition-colors hover:opacity-70 text-sm" style="color: #5D4037;">Manfaat</a> <a href="#testimoni" class="font-medium transition-colors hover:opacity-70 text-sm" style="color: #5D4037;">Testimoni</a>
      </nav>
     </div>
    </header><!-- Hero Section -->
@@ -95,11 +95,9 @@
       </div>
       <h1 id="tagline" class="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style="color: #3E2723;">Nikmati Kelezatan <span class="gradient-text">Susu Kurma</span> Premium</h1>
       <p class="text-base md:text-lg leading-relaxed" style="color: #5D4037;">Perpaduan sempurna susu segar dan kurma pilihan, menghadirkan minuman sehat yang kaya nutrisi untuk keluarga Anda.</p>
-      <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
-       <a id="hero-cta" href="#" onclick="orderViaWhatsApp(event)" class="relative overflow-hidden inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all hover:scale-105 w-full sm:w-auto" style="background-color: #8B5A2B; color: #FFFBF7;">
+      <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4"><a id="hero-cta" href="#" onclick="orderViaWhatsApp(event)" class="relative overflow-hidden inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all hover:scale-105 w-full sm:w-auto" style="background-color: #8B5A2B; color: #FFFBF7;">
         <div class="shimmer-btn absolute inset-0"></div>
-        <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor" class="relative z-10">
-         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor" class="relative z-10"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg><span id="cta-text" class="relative z-10">Pesan via WhatsApp</span> </a>
       </div>
       <div class="flex items-center gap-4 md:gap-6 pt-2 md:pt-4">
@@ -114,12 +112,13 @@
          😄
         </div>
        </div>
-       <p class="text-xs md:text-sm" style="color: #5D4037;"><strong style="color: #8B5A2B;">50+</strong> pelanggan puas</p>
+       <p class="text-xs md:text-sm" style="color: #5D4037;"><strong style="color: #8B5A2B;">500+</strong> pelanggan puas</p>
       </div>
      </div>
      <div class="relative flex justify-center items-center order-1 md:order-2">
       <div class="absolute inset-0 rounded-full blur-3xl opacity-30" style="background-color: #D4A574;"></div>
-      <div class="float-animation hero-image rounded-3xl flex items-center justify-center overflow-hidden" style="background: linear-gradient(135deg, #D4A574 0%, #8B5A2B 100%);"><img src="image/ig-post-normal.png" alt="Kurma Susu Premium" style="width: 95%; height: 95%; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+      <div class="float-animation hero-image rounded-3xl flex items-center justify-center overflow-hidden" style="background: linear-gradient(135deg, #D4A574 0%, #8B5A2B 100%);">
+       <img src="image/ig-post-normal.png" alt="Kurma Susu Premium" style="width: 95%; height: 95%; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
       </div>
      </div>
     </div>
@@ -130,42 +129,35 @@
       <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold mb-4" style="color: #3E2723;">Produk Kami</h2>
       <p class="text-sm md:text-base" style="color: #5D4037;">Pilih varian susu kurma favorit Anda</p>
      </div>
-     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-      <!-- Product 1 -->
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"><!-- Product 1 -->
       <div class="card-hover rounded-2xl p-6 shadow-lg" style="background-color: #FDF8F3;">
-       <div class="w-full h-40 md:h-48 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
-        <img src="image/botol-susu.png" alt="Susu Kurma Original" style="width: 110%; height: 110%; object-fit: contain;">
+       <div class="w-full h-40 md:h-48 rounded-xl mb-4 flex items-center justify-center overflow-hidden"><img src="image/botol-susu.png" alt="Susu Kurma Original" style="width: 120%; height: 120%; object-fit: contain;">
        </div>
        <div class="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3" style="background-color: #D4A574; color: #FFFBF7;">
         Best Seller
        </div>
        <h3 id="product-name" class="font-display text-lg md:text-xl font-bold mb-2" style="color: #3E2723;">Susu Kurma Original</h3>
        <p class="text-xs md:text-sm mb-4" style="color: #5D4037;">Rasa autentik susu kurma dengan manisnya alami</p>
-       <div class="flex items-center justify-between gap-2">
-        <span id="product-price" class="font-bold text-base md:text-lg" style="color: #8B5A2B;">Rp 15.000</span> <button onclick="orderViaWhatsApp(event, 'Original')" class="px-3 md:px-4 py-2 rounded-full font-medium text-sm md:text-base transition-all hover:scale-105" style="background-color: #8B5A2B; color: #FFFBF7;">Pesan</button>
+       <div class="flex items-center justify-between gap-2"><span id="product-price" class="font-bold text-base md:text-lg" style="color: #8B5A2B;">Rp 15.000</span> <button onclick="orderViaWhatsApp(event, 'Original')" class="px-3 md:px-4 py-2 rounded-full font-medium text-sm md:text-base transition-all hover:scale-105" style="background-color: #8B5A2B; color: #FFFBF7;">Pesan</button>
        </div>
       </div><!-- Product 2 -->
       <div class="card-hover rounded-2xl p-6 shadow-lg" style="background-color: #FDF8F3;">
-       <div class="w-full h-40 md:h-48 rounded-xl mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #A1887F 0%, #5D4037 100%);">
-        <span class="text-4xl md:text-6xl">⏳</span>
+       <div class="w-full h-40 md:h-48 rounded-xl mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #A1887F 0%, #5D4037 100%);"><span class="text-4xl md:text-6xl">⏳</span>
        </div>
        <h3 class="font-display text-lg md:text-xl font-bold mb-2" style="color: #3E2723;">Coming Soon</h3>
        <p class="text-xs md:text-sm mb-4" style="color: #5D4037;">Varian baru yang seru</p>
-       <div class="flex items-center justify-between gap-2">
-        <span class="font-bold text-base md:text-lg" style="color: #8B5A2B;">Coming Soon</span> <button onclick="orderViaWhatsApp(event, 'Cokelat')" class="px-3 md:px-4 py-2 rounded-full font-medium text-sm md:text-base transition-all hover:scale-105" style="background-color: #8B5A2B; color: #FFFBF7;">Pesan</button>
+       <div class="flex items-center justify-between gap-2"><span class="font-bold text-base md:text-lg" style="color: #8B5A2B;">Coming Soon</span> <button onclick="orderViaWhatsApp(event, 'Cokelat')" class="px-3 md:px-4 py-2 rounded-full font-medium text-sm md:text-base transition-all hover:scale-105" style="background-color: #8B5A2B; color: #FFFBF7;">Pesan</button>
        </div>
       </div><!-- Product 3 -->
       <div class="card-hover rounded-2xl p-6 shadow-lg" style="background-color: #FDF8F3;">
-       <div class="w-full h-40 md:h-48 rounded-xl mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #81C784 0%, #388E3C 100%);">
-        <span class="text-4xl md:text-6xl">⏳</span>
+       <div class="w-full h-40 md:h-48 rounded-xl mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #81C784 0%, #388E3C 100%);"><span class="text-4xl md:text-6xl">⏳</span>
        </div>
        <div class="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3" style="background-color: #81C784; color: #FFFBF7;">
         New
        </div>
        <h3 class="font-display text-lg md:text-xl font-bold mb-2" style="color: #3E2723;">Coming Soon</h3>
        <p class="text-xs md:text-sm mb-4" style="color: #5D4037;">Varian baru yang seru</p>
-       <div class="flex items-center justify-between gap-2">
-        <span class="font-bold text-base md:text-lg" style="color: #8B5A2B;">Coming Soon</span> <button onclick="orderViaWhatsApp(event, 'Matcha')" class="px-3 md:px-4 py-2 rounded-full font-medium text-sm md:text-base transition-all hover:scale-105" style="background-color: #8B5A2B; color: #FFFBF7;">Pesan</button>
+       <div class="flex items-center justify-between gap-2"><span class="font-bold text-base md:text-lg" style="color: #8B5A2B;">Coming Soon</span> <button onclick="orderViaWhatsApp(event, 'Matcha')" class="px-3 md:px-4 py-2 rounded-full font-medium text-sm md:text-base transition-all hover:scale-105" style="background-color: #8B5A2B; color: #FFFBF7;">Pesan</button>
        </div>
       </div>
      </div>
@@ -217,8 +209,7 @@
      </div>
      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
       <div class="p-4 md:p-6 rounded-2xl" style="background-color: #FDF8F3;">
-       <div class="flex items-center gap-1 mb-4 text-sm md:text-base">
-        <span style="color: #D4A574;">★★★★★</span>
+       <div class="flex items-center gap-1 mb-4 text-sm md:text-base"><span style="color: #D4A574;">★★★★★</span>
        </div>
        <p class="mb-4 italic text-sm md:text-base" style="color: #5D4037;">"Rasanya enak banget! Anak-anak suka dan saya tenang karena gizinya lengkap."</p>
        <div class="flex items-center gap-3">
@@ -232,8 +223,7 @@
        </div>
       </div>
       <div class="p-4 md:p-6 rounded-2xl" style="background-color: #FDF8F3;">
-       <div class="flex items-center gap-1 mb-4 text-sm md:text-base">
-        <span style="color: #D4A574;">★★★★★</span>
+       <div class="flex items-center gap-1 mb-4 text-sm md:text-base"><span style="color: #D4A574;">★★★★★</span>
        </div>
        <p class="mb-4 italic text-sm md:text-base" style="color: #5D4037;">"Cocok untuk sahur dan berbuka. Bikin kenyang lebih lama dan badan fit!"</p>
        <div class="flex items-center gap-3">
@@ -247,17 +237,16 @@
        </div>
       </div>
       <div class="p-4 md:p-6 rounded-2xl" style="background-color: #FDF8F3;">
-       <div class="flex items-center gap-1 mb-4 text-sm md:text-base">
-        <span style="color: #D4A574;">★★★★★</span>
+       <div class="flex items-center gap-1 mb-4 text-sm md:text-base"><span style="color: #D4A574;">★★★★★</span>
        </div>
-       <p class="mb-4 italic text-sm md:text-base" style="color: #5D4037;">"Varian originalnya juara! Suka banget sama rasanya!."</p>
+       <p class="mb-4 italic text-sm md:text-base" style="color: #5D4037;">"Varian cokelatnya juara! Sudah langganan 6 bulan, pengiriman cepat."</p>
        <div class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: #D4A574;">
          👩
         </div>
         <div>
          <p class="font-medium text-sm" style="color: #3E2723;">Mbak Dina</p>
-         <p class="text-xs" style="color: #5D4037;">Jakarta</p>
+         <p class="text-xs" style="color: #5D4037;">Surabaya</p>
         </div>
        </div>
       </div>
@@ -268,11 +257,12 @@
     <div class="max-w-4xl mx-auto text-center">
      <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4" style="color: #FFFBF7;">Siap Mencoba Susu Kurma?</h2>
      <p class="mb-6 md:mb-8 text-base md:text-lg opacity-90" style="color: #FFFBF7;">Dapatkan promo spesial untuk pembelian pertama Anda!</p>
-     <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-      <a href="#" onclick="orderViaWhatsApp(event)" class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all hover:scale-105 w-full md:w-auto" style="background-color: #FFFBF7; color: #8B5A2B;">
-       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-       </svg><span id="bottom-cta-text">Pesan Sekarang</span> </a> <a href="ig-web.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all hover:scale-105 w-full md:w-auto" style="background-color: #D4A574; color: #3E2723;">
-       <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><circle cx="17.5" cy="6.5" r="1.5"></circle>
+     <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6"><a href="#" onclick="orderViaWhatsApp(event)" class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all hover:scale-105 w-full md:w-auto" style="background-color: #FFFBF7; color: #8B5A2B;">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+       </svg><span id="bottom-cta-text">Pesan Sekarang</span> </a> <a href="https://www.instagram.com/nurranco.id/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all hover:scale-105 w-full md:w-auto" style="background-color: #D4A574; color: #3E2723;">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><circle cx="17.5" cy="6.5" r="1.5"></circle>
        </svg> Follow @nurranco.id </a>
      </div>
     </div>
@@ -288,9 +278,9 @@
       brand_name: 'Nurra & Co.',
       tagline: 'Nikmati Kelezatan <span class="gradient-text">Susu Kurma</span> Premium',
       product_name: 'Susu Kurma Original',
-      product_price: 'Rp 15.000/botol',
+      product_price: 'Rp 15.000',
       cta_text: 'Pesan via WhatsApp',
-      whatsapp_number: '. ',
+      whatsapp_number: '6289526615102',
       background_color: '#FDF8F3',
       surface_color: '#FFFBF7',
       text_color: '#5D4037',
@@ -380,13 +370,5 @@
       onConfigChange(defaultConfig);
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cc74290a5d4aa34',t:'MTc3MDg0ODcwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cc80ec604a9b5dc',t:'MTc3MDg1NzA2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
-
-
-
-
-
-
-
